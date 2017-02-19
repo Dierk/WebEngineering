@@ -20,3 +20,10 @@ Possible topics:
 - A web solution to keep track of your daily learning achievements.
 - A web solution to keep track of your programming errors.
 - A web solution to keep track of your plans in life.
+
+## Homework
+
+- create an HTML page with a form
+- make the form action sending an email to dierk.koenig@fhnw.ch
+- on the web, find the resource about HTML that you like best
+- use the form to submit a link to that resource and a description on why you like it
