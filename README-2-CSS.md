@@ -11,11 +11,20 @@
 - In the table introduce style classes to make the holidays less prominent 
 - In the table introduce style classes to make the exercise-related dates more prominent 
 
-## Assignment 3:
+## Challenge
+- make sure that your result from assignment 2 is visible through the github-pages feature
+- The best result wins a price!
 
-Take your HTML page from lecture 1 and style it with CSS. 
+## Homework 1:
 
-## Homework
+If you are not yet confident with using basic HTML and CSS
+consider working through http://www.codecademy.com .
+
+## Homework 2:
+
+Take your personal solution from lecture-1-HTML and style it with CSS. 
+
+## Homework 3:
 
 - Use divs with different background-color to create the rectangles below.
 - Use only CSS (and no external dependencies) to create the following layout
