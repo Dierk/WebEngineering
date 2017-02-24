@@ -1,11 +1,26 @@
 # WebEngineering Module, CSS
 
-## Assignment 1: 
+## Goals
+### Abilities
+- Styling of HTML pages wrt appearance and layout 
+- Being able to use CSS rules creatively
+- Avoiding duplication in style information
+- Separating "what" from "how"
+- Writing maintainable web documents
+### Knowledge
+- Basic selectors: element, class, id
+- Selector combinations: collection, descendant, child
+- Sourcing: inline, style element, link element
+- Basic knowledge of cascading and specificity
+- CSS box model
+- Basic knowledge of CSS units
+- Knowing the limits of our knowledge
+
+## Assignment 1
 - Change docs/Storybook.html document
 - put a style element in the header
 - improve some element styles (e.g h1, h2, section, article) to make them look nicer 
-- make ABBR and DFN elements indicating that they have popup-info
-- make the room/time info align vertically
+- make ABBR and DFN elements indicating in the same way that they both have popup-info
 
 ## Assignment 2:
 - In the table introduce style classes to make the holidays less prominent 
