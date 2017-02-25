@@ -28,6 +28,7 @@
 
 ## Challenge
 - make sure that your result from assignment 2 is visible through the github-pages feature
+- email a link to the html page to dierk.koenig@fhnw.ch.
 - The best result wins a price!
 
 ## Homework 1:
