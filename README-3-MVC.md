@@ -38,6 +38,8 @@ Browse to http://localhost:8080/static/Home.html .
 
 ## Assignment 2
 
+Have a look at mvc/src/integration-test/groovy/mvc/HomeSecondSpec.groovy .
+
 Write a test, that goes to http://www.fhnw.ch
 and clicks on a link with text "Studierende".
 Validate the page title.
@@ -46,17 +48,26 @@ Validate the page title.
 
 Have a look at 
 - http://localhost:8080/static/GradeCalculator.html
-- mvc/src/integration-test/groovy/mvc/CalculatorSpec.groovy
-- mvc/src/main/resources/public/GradeCalculator.html
+- mvc/src/integration-test/groovy/mvc/CalculatorSpec.groovy (note the commented line 26)
+- mvc/src/main/resources/public/GradeCalculator.html 
 - mvc/grails-app/controllers/mvc/CalculatorController.groovy
-- mvc/views/calculator/CalculatorOutput.gsp
+- mvc/views/calculator/CalculatorOutput.gsp (note the output placeholder)
 - mvc/src/test/groovy/mvc/CalculatorControllerSpec.groovy
 
-What happens when _en_ or _exam_ do not represent numbers?
+Uncomment line 26 in the integration test and run `grailsw test-app`.
+
+Use `grailsw open test-report` to see which test failed and why.
+
+Use `${ result }` in CalculatorOutput.gsp to put that calculated result in the right place.
+
+## Assignment 4
+
+In the GradeCalculator:
+what happens when _en_ or _exam_ do not represent numbers?
 
 Extend the integration test to cover the invalid input scenario.
 
-## Assignment 4
+## Assignment 5
 
 What happens when _en_ or _exam_ do not fall into 1.0 - 6.0?
 
