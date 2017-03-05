@@ -7,6 +7,7 @@
 - Avoiding duplication in style information
 - Separating "what" from "how"
 - Writing maintainable web documents
+
 ### Knowledge
 - Basic selectors: element, class, id
 - Selector combinations: collection, descendant, child
