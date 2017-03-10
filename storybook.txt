@@ -1,19 +1,2 @@
 
-
-20.02.17  1 HTML
-27.02.17  2 CSS
-06.03.17  3 Grails, Web, MVC, Test
-13.03.17  4 GSP, Template, Taglib, Layout
-20.03.17  5 Javascript, Typescript
-27.03.17  6 REST, Services, DB-Access (GORM)
-03.04.17  7 SPA mit React
-10.04.17  8 3-tier Enterprise Web, DolphinTS
-17.04.17    Feiertag: Ostermontag
-24.04.17  9 Übungsvorbereitung, Retrospective (?)
-01.05.17    Feiertag: 1.Mai
-08.05.17    Projektwoche
-15.05.17 10 Übungsanlass
-22.05.17 11 Responsive / Mobile Web
-29.05.17 12 The functional web (Elm), Übungsabgabe
-05.06.17    Feiertag: Pfingstmontag
-12.06.17 13 Prüfungsvorbereitung
+see: https://dierk.github.io/WebEngineering-Template/Storybook.html
