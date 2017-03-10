@@ -6,21 +6,21 @@
     In-Place Calculator
   </title>
   <style>
-    label {
+    label {  /* labels should go left of the input fields with fixed width such that the inputs align vertically */
       display: block;
-      float:left;
-      clear:left;
+      float: left;
+      clear: left;
       width: 7em;
     }
     input {
-      display:block;
-      float:left;
-      clear:right;
+      display: block;
+      float: left;
+      clear: right;
     }
-    .error {
+    .error { /* only change properties that do not change position or size. Keep the UI stable. */
       border-color: red;
     }
-    .padded {
+    .padded { /* for vertical alignment of fieldset and result */
       padding: 1em;
       margin: 0px;
     }
@@ -31,23 +31,12 @@
 
 <h1>In-Place Calculator</h1>
 
-
 <form action="/inPlaceCalculator/calc" method="get">
   <fieldset class="form padded">
-    <div>
-      <label for='en'>En</label>
-      <input type="number decimal" name="en" value="${calculatorInstance.en}"
-             required="true" min="1.0" max="6.0" id="en"
-             class="${calculatorInstance.en_error}"
-             title="${calculatorInstance.en_error_message}"
-      />
-    </div>
 
-    <div>
-      <label for='exam'>Exam</label>
-      <input type="number decimal" name="exam" value="${calculatorInstance.exam}"
-             required="true" min="1.0" max="6.0" id="exam"/>
-    </div>
+    <tmpl:form_row name="en"   label="En"   calculatorInstance="${calculatorInstance}" />
+
+    <tmpl:form_row name="exam" label="Exam" calculatorInstance="${calculatorInstance}" />
 
     <div>
       <label>&nbsp;</label>
