@@ -7,7 +7,7 @@ class InPlaceCalculatorController {
     def calc(CalculatorModel model) {
         model.en     = Math.round(model.en   * 10) / 10
         model.exam   = Math.round(model.exam * 10) / 10
-        model.result = Math.round((model.en + model.exam) / 2).toString()
+        model.result = Math.round((model.en + model.exam) / 2)
         if (0.0 == model.en) {
             model.result = "Cannot calculate. En value was invalid."
         }
