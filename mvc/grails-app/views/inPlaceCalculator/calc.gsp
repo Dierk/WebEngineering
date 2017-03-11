@@ -18,7 +18,7 @@
       clear: right;
     }
     .error { /* only change properties that do not change position or size. Keep the UI stable. */
-      border-color: red;
+      border-color: orange;
     }
     .padded { /* for vertical alignment of fieldset and result */
       padding: 1em;
