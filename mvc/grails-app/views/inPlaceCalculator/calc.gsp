@@ -1,35 +1,12 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8"/>
+  <meta name="layout" content="form"/>
   <title>
     In-Place Calculator
   </title>
-  <style>
-    label {  /* labels should go left of the input fields with fixed width such that the inputs align vertically */
-      display: block;
-      float: left;
-      clear: left;
-      width: 7em;
-    }
-    input {
-      display: block;
-      float: left;
-      clear: right;
-    }
-    .error { /* only change properties that do not change position or size. Keep the UI stable. */
-      border-color: orange;
-    }
-    .padded { /* for vertical alignment of fieldset and result */
-      padding: 1em;
-      margin: 0px;
-    }
-  </style>
 </head>
 
 <body>
-
-<h1>In-Place Calculator</h1>
 
 <form action="/inPlaceCalculator/calc" method="get">
   <fieldset class="form padded">
