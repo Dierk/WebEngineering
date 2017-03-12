@@ -11,74 +11,64 @@
 - Understanding the request-response cycle
 - Understanding the four ways of composing server pages plus when to use which
 - Where and how to validate
+- Optional: using Grails internationalized error messages for generic error display
 
-## Assignment 1
+## Demo/Code walkthrough 
 
-Make sure that you have a Java JDK 1.7 or 1.8 installed and `JAVA_HOME` 
-set appropriately. Check by running
+We are using git to walk through the code of InPlaceCalculator
+incl. model, view, controller, tests.
 
-    java -version
+Use `git checkout <commit_number>` to see the respective state of development.
 
-Run the tests
+You can always go back to the joungest state with `git checkout master`.
 
-    cd mvc
-    grailsw test-app
+### Start of work on InPlaceCalculator
 
-_this will take a while to download the first time_    
-        
-Run the application
+	git checkout cb1fc35
+	
+Have a look at all artifacts in the commit.
 
-    grailsw run-app
+### Intermediate step:more generic field error handling
 
-Browse to http://localhost:8080/static/Home.html .
+	git checkout 929dfef	
 
-## Assignment 2
+### Use of _form_row.gsp template for smart, labeled fields	
 
-Have a look at mvc/src/integration-test/groovy/mvc/HomeSecondSpec.groovy .
+	git checkout fe5690f
+	
+### Using a taglib for dynamic content
 
-Write a test, that goes to http://www.fhnw.ch
-and clicks on a link with text "Studierende".
-Validate the page title.
+	git checkout be7b2ac
 
-## Assignment 3
+### Grails specific: fully generic error messages plus I18N
 
-Have a look at 
-- http://localhost:8080/static/GradeCalculator.html
-- mvc/src/integration-test/groovy/mvc/CalculatorSpec.groovy (note the commented line 26)
-- mvc/src/main/resources/public/GradeCalculator.html 
-- mvc/grails-app/controllers/mvc/CalculatorController.groovy
-- mvc/views/calculator/CalculatorOutput.gsp (note the output placeholder)
-- mvc/src/test/groovy/mvc/CalculatorControllerSpec.groovy
+	git checkout 192322a
+	
+### Using a layout for the form
 
-Uncomment line 26 in the integration test and run `grailsw test-app`.
+	git checkout c321126
+	
 
-Use `grailsw open test-report` to see which test failed and why.
+## Practical work (may extend into homework)
 
-Use `${ result }` in CalculatorOutput.gsp to put that calculated result in the right place.
+Make a Fahrenheit to Celsius converter.
 
-## Assignment 4
+You best make a copy of each artifact that we used for the InPlaceCalculator
+(model, view, controller, tests, form_row template).
+Just copy the file into the same directory as the original and rename accordingly.
 
-In the GradeCalculator:
-what happens when _en_ or _exam_ do not represent numbers?
+You can reuse the _form_ layout.
 
-Extend the integration test to cover the invalid input scenario.
+You can make use of the following conversion functions:
 
-## Assignment 5
+	double c2f(double c) { c * 1.8d + 32 }
+	double f2c(double f) { (f-32) / 1.8d }
 
-What happens when _en_ or _exam_ do not fall into 1.0 - 6.0?
-
-Write down how you would address this issue.
-Unit test or integration test?
-Which code needs change: test, controller, view?
-
+It is probably best to work with two input fields: one for fahrenheit, one for celsius,
+and calculate a result for each of the inputs separately.
 
 ## Homework 
 
-Take the InPlaceCalculator and modify the current solution so that
-- when the "en" field does not validate,
-  an error message is displayed right beneath the field and
-  the en input field itself is marked with a red border  
-- when the "exam" field does not validate,
-  an error message is displayed right beneath the field and
-  the exam input field itself is marked with a red border
-- note that both, en and exam, may be erroneous at the same time.  
+Watch http://guides.grails.org/grails-quickcasts-developing-grails-3-applications-with-intellij-idea/guide/index.html
+
+It is a good 20 minutes introduction to Grails even when you do not use IDEA.
