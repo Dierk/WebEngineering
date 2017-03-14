@@ -20,7 +20,7 @@ incl. model, view, controller, tests.
 
 Use `git checkout <commit_number>` to see the respective state of development.
 
-You can always go back to the joungest state with `git checkout master`.
+You can always go back to the youngest state with `git checkout master`.
 
 ### Start of work on InPlaceCalculator
 
