@@ -7,35 +7,9 @@
   </title>
   <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
 
-  <style>
-    label {  /* labels should go left of the input fields with fixed width such that the inputs align vertically */
-      display: block;
-      float: left;
-      clear: left;
-      width: 7em;
-    }
-    input {
-      display: block;
-      float: left;
-      clear: right;
-    }
-    .error { /* only change properties that do not change position or size. Keep the UI stable. */
-      border-color: orange;
-    }
-    .padded { /* for vertical alignment of fieldset and result */
-      padding: 1em;
-      margin: 0px;
-    }
-    footer {
-      display: block;
-      width: 100%;
-      background-color: lightgray;
-      position: fixed;
-      bottom: 0px;
-      left: 0px;
-      text-align: center;
-    }
-  </style>
+  <asset:stylesheet src="form.css"/>
+
+  %{--<asset:javascript src="form_validation.js"/>--}%
 
   <g:layoutHead/>
 </head>
