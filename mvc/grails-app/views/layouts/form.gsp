@@ -9,7 +9,7 @@
 
   <asset:stylesheet src="form.css"/>
 
-  %{--<asset:javascript src="form_validation.js"/>--}%
+  <asset:javascript src="form_validation.js"/>
 
   <g:layoutHead/>
 </head>
