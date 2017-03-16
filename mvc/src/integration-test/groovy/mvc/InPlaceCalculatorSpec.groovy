@@ -9,7 +9,6 @@ import grails.test.mixin.integration.Integration
 @Integration
 class InPlaceCalculatorSpec extends GebSpec {
 
-
     void "Calculate in place with a self-refreshing view"() {
         when: "Go to start GSP page by calling it disguised as HTML"
             go '/InPlaceCalculator.html'
@@ -23,6 +22,7 @@ class InPlaceCalculatorSpec extends GebSpec {
 
         then: "Result is displayed with proper rounding up"
             $("output").text() == "6"
-
     }
+
+
 }
