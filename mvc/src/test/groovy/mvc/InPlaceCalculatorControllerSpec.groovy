@@ -36,7 +36,7 @@ class InPlaceCalculatorControllerSpec extends Specification {
     }
 
     @Unroll
-    void "invalid input: #failureCase"(en, exam, String failureCase) {
+    void "invalid inputs (#errorCount): #failedProp wrong"(en, exam, errorCount, String failedProp) {
         given:
             def model = new CalculatorModel(en:en, exam:exam)
             model.validate() // Grails does that automatically
@@ -44,12 +44,14 @@ class InPlaceCalculatorControllerSpec extends Specification {
             controller.calc(model)
         then:
             model.result == "Cannot calculate. Input data was invalid."
+            model.errors.fieldErrors.size() == errorCount
+            FieldUtil.hasError(model, failedProp)
         where:
-            en  | exam | failureCase
-            0.9 | 3.0  | "en too small"
-            6.1 | 3.0  | "en too big"
-            3.0 | 0.9  | "exam too small"
-            3.0 | 6.1  | "exam too big"
-            0.9 | 6.1  | "combination: both wrong"
+            en  | exam | errorCount | failedProp
+            0.9 | 3.0  |          1 | "en"
+            6.1 | 3.0  |          1 | "en"
+            3.0 | 0.9  |          1 | "exam"
+            3.0 | 6.1  |          1 | "exam"
+            0.9 | 6.1  |          2 | "exam"
     }
 }

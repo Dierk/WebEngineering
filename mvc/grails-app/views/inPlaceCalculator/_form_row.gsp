@@ -11,8 +11,8 @@
   <label for='${name}'>${label}</label>
   <input type="number decimal" name="${name}" value="${calculatorInstance.getProperty(name)}"
          required="true" min="1.0" max="6.0" id="${name}"
-         class="${calculatorInstance.errors.fieldErrors.any {it.field == name} ? 'error' : ''}"
-         title="${g.message(error: calculatorInstance.errors.fieldErrors.find {it.field == name} ?: '') }"
+         class="${mvc.FieldUtil.hasError(calculatorInstance, name) ? 'error' : ''}"
+         title="${g.message(error: mvc.FieldUtil.findError(calculatorInstance, name) ?: '') }"
          %{--onchange="validate(this);"--}%
   />
 </div>
