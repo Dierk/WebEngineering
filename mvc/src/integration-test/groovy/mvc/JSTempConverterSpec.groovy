@@ -17,11 +17,12 @@ class JSTempConverterSpec extends GebSpec {
         then:
         	title == "Temperature Converter with JavaScript"
 
-        when: "set celsius without clicking"
-            $("form").celsius = "42"
+        when: "set celsius without button clicking"
+            $("form").celsius = "10"
+            $("form").fahrenheit().click()
 
         then: "the other field is updated immediately"
-            $("form").fahrenheit  == "32"
+            $("form").fahrenheit  == "50"
     }
 
     // TODO: make a new test method for fahrenheit to celsius conversion
