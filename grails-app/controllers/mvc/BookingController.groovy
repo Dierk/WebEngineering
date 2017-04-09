@@ -16,13 +16,13 @@ class BookingController {
         render view:"search", model:[people: Person.list()]
     }
 
-    def openBookingsFor(Person person) { // TODO: improve by using Services
+    def openBookingsFor(Person person) {
         Date today = new Date().clearTime()
         List<Booking> bookings = Booking.findAllByBookerAndDayGreaterThanEquals(person, today)
         render view:"openBookingsFor", model:[bookings: bookings]
     }
 
-    def availableRoomsFor(String day, String timeSlot) { // TODO: improve by using Services
+    def availableRoomsFor(String day, String timeSlot) {
         def allRooms = Room.list()
         def searchDay = Date.parse('yyyy-MM-dd', day)
         def bookedRooms = Booking.findAllByDayAndTimeSlot(searchDay, timeSlot).room
