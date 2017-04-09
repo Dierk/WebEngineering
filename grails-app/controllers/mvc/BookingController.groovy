@@ -1,0 +1,32 @@
+package mvc
+
+class BookingController {
+
+    static scaffold = Booking
+
+    def play() {
+        def allRooms = Room.list()
+        Date today = new Date().clearTime()
+        String lastSlot = "15:15-18:00"
+        def bookedRooms = Booking.findAllByDayAndTimeSlot(today, lastSlot).room
+        render text: (allRooms - bookedRooms)
+    }
+
+    def search() {
+        render view:"search", model:[people: Person.list()]
+    }
+
+    def openBookingsFor(Person person) { // TODO: improve by using Services
+        Date today = new Date().clearTime()
+        List<Booking> bookings = Booking.findAllByBookerAndDayGreaterThanEquals(person, today)
+        render view:"openBookingsFor", model:[bookings: bookings]
+    }
+
+    def availableRoomsFor(String day, String timeSlot) { // TODO: improve by using Services
+        def allRooms = Room.list()
+        def searchDay = Date.parse('yyyy-MM-dd', day)
+        def bookedRooms = Booking.findAllByDayAndTimeSlot(searchDay, timeSlot).room
+        render view:"availableRoomsFor", model: [rooms: (allRooms - bookedRooms)]
+    }
+
+}
