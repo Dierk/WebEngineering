@@ -7,6 +7,7 @@
     </title>
     <script>
         var photoNumber = 0;
+        var pageNumber  = 1;
         var photoInfos = undefined;
 
         function setPhotoInfos() {
@@ -21,12 +22,18 @@
                 return
             }
             var photo = photoInfos[photoNumber++];
+            if (photoNumber > 10) {
+                pageNumber = pageNumber + 1;
+                photoNumber = 0;
+                findInterestingImages();
+                return
+            }
             var pictureUrl = "http://static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_m.jpg";
             document.getElementById("target").innerHTML = "<img src='" + pictureUrl + "'><div> " + photo.title + "</div>";
         }
 
         function findInterestingImages() {
-            var url = "https://www.flickr.com/services/rest/?method=flickr.interestingness.getList&per_page=10&format=json&nojsoncallback=1&api_key=d5d6d15bb498e649b134170184968b61";
+            var url = "https://www.flickr.com/services/rest/?method=flickr.interestingness.getList&per_page=10&page=" + pageNumber + "&format=json&nojsoncallback=1&api_key=d5d6d15bb498e649b134170184968b61";
             var req = new XMLHttpRequest();
             req.addEventListener("load", setPhotoInfos);
             req.open("GET", url);

@@ -1,5 +1,8 @@
 package mvc
 
+import grails.rest.Resource
+
+@Resource(uri="/booking")
 class Booking {
     Room   room
     Person booker

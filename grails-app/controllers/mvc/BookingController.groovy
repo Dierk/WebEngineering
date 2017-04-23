@@ -19,7 +19,7 @@ class BookingController {
     def openBookingsFor(Person person) {
         Date today = new Date().clearTime()
         List<Booking> bookings = Booking.findAllByBookerAndDayGreaterThanEquals(person, today)
-        render view:"openBookingsFor", model:[bookings: bookings]
+        respond bookings, view:"openBookingsFor", model:[bookings: bookings]
     }
 
     def availableRoomsFor(String day, String timeSlot) {
