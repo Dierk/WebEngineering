@@ -2,9 +2,9 @@
 
 ## Commit Proposal
 
-Matrikel Number: <to be filled by student>
+Matriculation Number: <to be filled by student>
 
-Project idea short description:
+Project idea short description: 
 
 
 ## Project confirmation

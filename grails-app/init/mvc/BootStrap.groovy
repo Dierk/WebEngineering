@@ -8,6 +8,7 @@ class BootStrap {
         if (Environment.current == Environment.PRODUCTION) {
             return
         }
+
         // only in development and test
         Room upper = new Room(description: "5.3A17", capacity: 42).save(failOnError:true)
         Room lower = new Room(description: "5.1H19", capacity: 30).save(failOnError:true)
