@@ -63,6 +63,8 @@
             </p>
 
             <div id="controllers" role="navigation">
+
+                <p> Localhost: ${ InetAddress.getLocalHost() }</p>
                 <h2>Available Controllers:</h2>
                 <ul>
                     <li class="controller">
