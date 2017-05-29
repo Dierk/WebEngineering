@@ -33,13 +33,3 @@ Ransomware "wanna cry".
 
 - Make a page of your choice web friendly.
   Suggestion: in the InPlaceCalculator, make labels not appear left but on top of the input field.
-
-
-## How to put your work live on the web
-
-Heroku sign up, use git remote
-
-### Atrocities when running on the web
-ddos, spam, captcha, password storage, lost passwords, content encoding
-harvesting, logging, monitoring, (locale, time zones, character encodings)
-data protection, forgetful data 
