@@ -1,14 +1,12 @@
 # WebEngineering Module, HTML
 
 ## Assignment 1: 
-- Change docs/Example.html document
-- git commit
-- git push
+- Change Example.html document
 - view change in browser
 
 ## Assignment 2:
 - Correct Example.html to be valid html
-- Validate your work with a tool
+- Validate your work with https://validator.w3.org
 
 ## Assignment 3:
 
@@ -21,7 +19,7 @@ Possible topics:
 - A web solution to keep track of your programming errors.
 - A web solution to keep track of your plans in life.
 
-## Homework
+## Training for aspiring professionals
 
 - create an HTML page with a form
 - make the form action sending an email to dierk.koenig@fhnw.ch
