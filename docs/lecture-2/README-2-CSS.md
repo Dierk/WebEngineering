@@ -18,7 +18,8 @@
 - Knowing the limits of our knowledge
 
 ## Assignment 1
-- Change docs/Storybook.html document
+- Change Storybook.html document
+- Include the storybook.txt by in am HTML table
 - put a style element in the header
 - improve some element styles (e.g h1, h2, section, article) to make them look nicer 
 - make ABBR and DFN elements indicating in the same way that they both have popup-info
@@ -32,16 +33,16 @@
 - email a link to the html page to dierk.koenig@fhnw.ch.
 - The best result wins a price!
 
-## Homework 1:
+## Training for aspiring professionals 1:
 
 If you are not yet confident with using basic HTML and CSS
 consider working through http://www.codecademy.com .
 
-## Homework 2:
+## Training for aspiring professionals 2:
 
 Take your personal solution from lecture-1-HTML and style it with CSS. 
 
-## Homework 3:
+## Training for aspiring professionals 3:
 
 - Use divs with different background-color to create the rectangles below.
 - Use only CSS (and no external dependencies) to create the following layout
