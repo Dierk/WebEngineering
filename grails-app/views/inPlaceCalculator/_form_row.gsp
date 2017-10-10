@@ -13,8 +13,14 @@
   <label for='${name}'>${label}</label>
   <input type="number decimal" name="${name}" value="${model.getProperty(name)}"
          required="true" min="1.0" max="6.0" id="${name}"
-         class="${hasError(model, name) ? 'error' : ''}"
-         title="${g.message(error: findError(model, name)) }"
+         class="${ (true == false) ? 'error' : ''}"
+         title="${g.message(error: "unknown error") }"
 
   />
 </div>
+
+<!--
+   functions to use
+    hasError(model, name)
+    findError(model, name)
+-->
