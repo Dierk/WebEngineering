@@ -19,16 +19,17 @@
             var input = document.getElementById(valueName);
             input.value = parseInt(input.value) + 1 ;
         }
-        function decrease(valueName) {
-            var input = document.getElementById(valueName);
-            input.value = parseInt(input.value) - 1 ;
-        }
+
+        // todo: add a function to decrease the value
+
     </script>
 </head>
 <body>
     <form action="/multiplicationCircle/index">
       <tmpl:up_down_input name="segmentCount" label="Segments" value="${circleInstance.segmentCount}" />
-      <tmpl:up_down_input name="tableBase" label="Table Base"  value="${circleInstance.tableBase}"    />
+
+      <!-- TODO: add an input for the table base -->
+
     </form>
     <svg width="400" height="400">
         <circle r="198" cx="200" cy="200"/>

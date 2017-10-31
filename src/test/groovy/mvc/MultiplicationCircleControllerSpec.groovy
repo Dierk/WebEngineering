@@ -19,7 +19,7 @@ class MultiplicationCircleControllerSpec extends Specification {
     @Unroll
     void "asking for #segments segments should provide #segments lines"(segments) {
         given:
-            def model = new MultiplicationCircleModel(segmentCount: segments, tableBase: 2)
+            def model = new MultiplicationCircleModel(segmentCount: segments) // todo: add the table base when it is available
         when:
             controller.index(model)
         then:

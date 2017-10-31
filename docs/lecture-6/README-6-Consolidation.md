@@ -17,14 +17,16 @@ https://www.youtube.com/watch?v=qhbuKbxJsk8
 
 ## Demo/Code walkthrough 
 
-- Start creating a view for the times-two multiplication table
-  with testing and Web MVC
-- use SVG to create the graphical view
+- Visit the todos in the code:
+  - MultiplicationCircleController
+  - multiplicationCircle/show.gsp
+  - integration-test MultiplicationCircleSpec
+  - test MultiplicationCircleControllerSpec
 
 ## practical work
 
-- introduce a form to change the table's multiplier
-- introduce a facility to change the number of slices
+- make the counting-down for the segment count work, incl. the test
+- add a tableBase such that we can show the circle for many bases
 
 ## Homework 
 
