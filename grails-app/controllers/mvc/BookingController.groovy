@@ -10,6 +10,10 @@ class BookingController {
 	    render text: result.toString()
     }
 
+	def all() {
+		respond Booking.list()
+	}
+
     def freeTodayMorning() {
 	
 		// allRooms = find all rooms	
@@ -25,7 +29,7 @@ class BookingController {
 		
 		List<Room> result = allRooms - allRoomsBookedThisMorning
 	
-	    render text: result.toString()
+	    respond result
     }
 
 }
