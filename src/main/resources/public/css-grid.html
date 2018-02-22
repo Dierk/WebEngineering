@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css-Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 3em auto 3em;
+            grid-template-areas:
+                "h1 h1 h1 h2 h2 h2 h3 h3 h3 h4 h4 h4"
+                "m1 m1 m1 m1 m1 m1 m1 m1 m2 m2 m2 m2"
+                "f1 f1 f1 f1 f2 f2 f2 f2 f3 f3 f3 f3"
+                ;
+        }
+        .item {
+            background: orange;
+            text-align: center;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+        .h1 {
+            grid-area: h1;
+        }
+        .h2 {
+            grid-area: h2;
+        }
+        .h3 {
+            grid-area: h3;
+        }
+        .h4 {
+            grid-area: h4;
+        }
+        .m1 {
+            grid-area: m1;
+            min-height: 10em;
+            background: white;
+        }
+        .m2 {
+            grid-area: m2;
+            background: papayawhip;
+        }
+        .f1 {
+            grid-area: f1;
+        }
+        .f2 {
+            grid-area: f2;
+        }
+        .f3 {
+            grid-area: f3;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="item h1">header 1</div>
+  <div class="item h2">header 2</div>
+  <div class="item h3">header 3</div>
+  <div class="item h4">header 3</div>
+
+  <div class="item m1">main 1</div>
+  <div class="item m2">main 2</div>
+
+  <div class="item f1">footer 1</div>
+  <div class="item f2">footer 2</div>
+  <div class="item f3">footer 3</div>
+</div>
+
+
+</body>
+</html>

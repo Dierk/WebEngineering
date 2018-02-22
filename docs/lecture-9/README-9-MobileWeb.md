@@ -11,16 +11,17 @@ device capabilities.
 
 ## Resources
 
-Wanna Cry, Computerphile
-https://www.youtube.com/watch?v=88jkB1V6N9w
+Meltdown & Spectre, Computerphile
+https://www.youtube.com/watch?v=I5mRwzVvFGE
 
 ## Running assignment
 
 Going through open questions.
+GORM Inheritance.
 
 ## News
 
-Ransomware "wanna cry".
+Meltdown, Spectre
 
 ## Demo / Live-coding / Lecture
 
