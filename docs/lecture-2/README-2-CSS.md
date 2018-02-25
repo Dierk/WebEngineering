@@ -63,4 +63,5 @@ Take your personal solution from lecture-1-HTML and style it with CSS.
         +-----------------------------------------------+
         
 - Can you make it so that it fills the full browser page?        
-- Can you make it so that the proportions remain when the browser resizes?        
+- Can you make it so that the proportions remain when the browser resizes?    
+- Can you do it with css grid layout?    
