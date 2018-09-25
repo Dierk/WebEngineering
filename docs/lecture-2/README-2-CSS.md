@@ -19,7 +19,7 @@
 
 ## Assignment 1
 - Change Storybook.html document
-- Include the storybook.txt by in am HTML table
+- Include the storybook.txt by in a HTML table
 - put a style element in the header
 - improve some element styles (e.g h1, h2, section, article) to make them look nicer 
 - make ABBR and DFN elements indicating in the same way that they both have popup-info

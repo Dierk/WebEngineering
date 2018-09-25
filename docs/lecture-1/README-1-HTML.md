@@ -1,7 +1,11 @@
 # WebEngineering Module, HTML
 
 ## Assignment 1: 
-- Change Example.html document
+Using github as a web server
+- create a github account if you haven't one already
+- create a github repository
+- copy Example.html into the /docs folder of that repo
+- Change Example.html document, git commit, push
 - view change in browser
 
 ## Assignment 2:
