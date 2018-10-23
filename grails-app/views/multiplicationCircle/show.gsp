@@ -5,7 +5,7 @@
     <style>
         circle, line {
             fill: white;
-            stroke: #FF0000C0;
+            stroke: rgba(255, 0, 0, 0.7);
             stroke-width: 3px;
         }
         label {
@@ -14,7 +14,7 @@
             width: 5em;
         }
     </style>
-    <script language="JavaScript">
+    <script>
         function increase(valueName) {
             var input = document.getElementById(valueName);
             input.value = parseInt(input.value) + 1 ;
